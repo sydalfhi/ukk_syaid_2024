@@ -8,12 +8,17 @@ section alert
 
 
 navbar
-         <div>
-        @include('components.fragment.nav')
-        </div>
 sidebar
-
 footer
+
+
+
+alternative @can
+ @if(Auth::user()->role == 'admin')
+    <a href="{{ route('pasien.tambah') }}" >
+       tombol yg cuma admin yg bisa lihat
+    </a>
+    @endif
 
 
 
