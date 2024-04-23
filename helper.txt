@@ -1,0 +1,20 @@
+section alert
+
+  @if (session('success_message'))
+        <div>
+            @include('components.fragment.alert')
+        </div>
+    @endif
+
+
+navbar
+         <div>
+        @include('components.fragment.nav')
+        </div>
+sidebar
+
+footer
+
+
+
+
