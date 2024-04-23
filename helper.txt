@@ -23,3 +23,22 @@ alternative @can
 
 
 
+//nama tabel
+ protected $table = "visi_misi";
+
+
+    //kecil ke besar
+    public function jadwalDokter()
+    {
+        $this->hasMany(JadwalDokter::class, 'id');
+    }
+
+    //besar ke kecil
+     public function pasien()
+    {
+        return $this->belongsTo(Pasien::class, 'id');
+    }
+
+
+
+

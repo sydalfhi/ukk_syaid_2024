@@ -27,37 +27,26 @@
                             <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">45</td>
                             <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">New York
                                 No. 1 Lake Park</td>
-                            <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
-                                <button type="button"
-                                    class="inline-flex items-center text-sm font-semibold text-blue-600 border border-transparent rounded-lg gap-x-2 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
+                            <td class="flex justify-end px-6 py-4 space-x-2 text-sm font-medium whitespace-nowrap ">
+                                <a href="">
+                                    <button type="button"
+                                        class="inline-flex items-center px-4 py-3 text-sm font-semibold text-yellow-800 bg-yellow-100 border border-transparent rounded-lg gap-x-2 hover:bg-yellow-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-yellow-900 dark:text-yellow-500 dark:hover:text-yellow-400">
+                                        Edit
+                                    </button>
+                                </a>
+
+                                <form action="" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="button"
+                                        class="inline-flex items-center px-4 py-3 text-sm font-semibold text-red-800 bg-red-100 border border-transparent rounded-lg gap-x-2 hover:bg-red-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-red-900 dark:text-red-500 dark:hover:text-red-400">
+                                        Delete
+                                    </button>
+                                </form>
+
                             </td>
                         </tr>
 
-                        <tr>
-                            <td
-                                class="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap dark:text-neutral-200">
-                                Jim Green</td>
-                            <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">27</td>
-                            <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">London
-                                No. 1 Lake Park</td>
-                            <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
-                                <button type="button"
-                                    class="inline-flex items-center text-sm font-semibold text-blue-600 border border-transparent rounded-lg gap-x-2 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td
-                                class="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap dark:text-neutral-200">
-                                Joe Black</td>
-                            <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">31</td>
-                            <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">Sidney
-                                No. 1 Lake Park</td>
-                            <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
-                                <button type="button"
-                                    class="inline-flex items-center text-sm font-semibold text-blue-600 border border-transparent rounded-lg gap-x-2 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
