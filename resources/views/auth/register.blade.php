@@ -4,13 +4,25 @@
 
         <!-- Name -->
         <div>
-            <x-input-label for="name" :value="__('Nama')" />
-            <x-text-input id="name" class="block w-full mt-1" type="text" name="name" :value="old('name')" required
-                autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+            <x-input-label for="username" :value="__('Username')" />
+            <x-text-input id="username" class="block w-full mt-1" type="text" name="username" :value="old('username')" required
+                autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('username')" class="mt-2" />
+        </div>
+        <div class="mt-4">
+            <x-input-label for="namaLengkap" :value="__('Nama Lengkap')" />
+            <x-text-input id="namaLengkap" class="block w-full mt-1" type="text" name="namaLengkap" :value="old('namaLengkap')"
+                required autofocus autocomplete="namaLengkap" />
+            <x-input-error :messages="$errors->get('nameLengkap')" class="mt-2" />
+        </div>
+        <div class="mt-4">
+            <x-input-label for="alamat" :value="__('Alamat')" />
+            <x-text-input id="alamat" class="block w-full mt-1" type="text" name="alamat" :value="old('alamat')"
+                required autofocus autocomplete="alamat" />
+            <x-input-error :messages="$errors->get('nameLengkap')" class="mt-2" />
         </div>
 
-        <!-- Email Address -->
+
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block w-full mt-1" type="email" name="email" :value="old('email')"

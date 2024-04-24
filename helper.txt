@@ -25,6 +25,15 @@ alternative @can
 
 //nama tabel
  protected $table = "visi_misi";
+ protected $primaryKey = 'verification_token';
+  protected $fillable = [
+        'username',
+        'namaLengkap',
+        'alamat',
+        'email',
+        'password',
+        'role',
+    ];
 
 
     //kecil ke besar
@@ -42,3 +51,8 @@ alternative @can
 
 
 
+
+@extends('template.index')
+@section('root')
+
+@endsection

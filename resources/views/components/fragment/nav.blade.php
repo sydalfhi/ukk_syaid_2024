@@ -3,7 +3,7 @@
     <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
         aria-label="Global">
         <div class="flex items-center justify-between">
-            <a class="flex-none text-xl font-semibold text-white" href="#" aria-label="Brand">Brand</a>
+            <a class="flex-none text-xl font-semibold text-white" href="#" aria-label="UKK_SYAID">UKK_SYAID</a>
             <div class="sm:hidden">
                 <button type="button"
                     class="flex items-center justify-center text-sm font-semibold text-white border rounded-lg hs-collapse-toggle size-9 gap-x-2 border-white/20 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none"
@@ -29,15 +29,15 @@
             class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow sm:block">
             <div
                 class="flex flex-col mt-5 gap-y-4 gap-x-0 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-                <a class="font-medium text-white sm:py-6" href="#" aria-current="page">Landing</a>
-                <a class="font-medium text-white/80 hover:text-white sm:py-6" href="#">Account</a>
-                <a class="font-medium text-white/80 hover:text-white sm:py-6" href="#">Work</a>
-                <a class="font-medium text-white/80 hover:text-white sm:py-6" href="#">Blog</a>
+                <a class="font-medium text-white capitalize sm:py-6" href="/dashboard" aria-current="page">Dashboard</a>
+                <a class="font-medium capitalize text-white/80 hover:text-white sm:py-6" href="/buku">buku</a>
+                <a class="font-medium capitalize text-white/80 hover:text-white sm:py-6"
+                    href="/peminjaman">peminjaman</a>
 
                 <div
                     class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
                     <button type="button" class="flex items-center w-full font-medium text-white/80 hover:text-white">
-                        Dropdown
+                        lainnya
                         <svg class="flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -49,17 +49,12 @@
                         class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
                         <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
                             href="#">
-                            About
+                            ulasan
                         </a>
                         <div class="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]'>
                 <button type="button"
                             class="flex items-center justify-between w-full px-3 py-2 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300">
-                            Sub Menu
-                            <svg class="flex-shrink-0 sm:-rotate-90 ms-2 size-4" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m6 9 6 6 6-6" />
-                            </svg>
+
                             </button>
 
                             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 top-0 end-full !mx-[10px]'>
@@ -67,16 +62,9 @@
                                 items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100
                                 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700
                                 dark:hover:text-neutral-300" href="#">
-                                About
+
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
-                                    href="#">
-                                    Downloads
-                                </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
-                                    href="#">
-                                    Team Account
-                                </a>
+
                             </div>
                         </div>
 
@@ -92,14 +80,14 @@
                 </div>
 
                 <a class="flex items-center font-medium gap-x-2 text-white/80 hover:text-white sm:border-s sm:border-white/30 sm:my-6 sm:ps-6"
-                    href="#">
+                    href="/profile">
                     <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
                         <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                         <circle cx="12" cy="7" r="4" />
                     </svg>
-                    Log in
+                    {{ Auth::user()->username }}
                 </a>
             </div>
         </div>

@@ -22,16 +22,18 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         User::create([
-            'name' => "admin",
+            'username' => "admin",
+            'namaLengkap' => "admin",
             'email' => "admin@gmail.com",
             'password' => "12312312",
             'role' => "admin"
         ]);
         User::create([
-            'name' => "syaid alfarishi",
+            'username' => "syalfrhiii",
+            'namaLengkap' => "syaid alfarishi",
             'email' => "syaidalfarishi@gmail.com",
             'password' => "syaid123",
-            'role' => "admin"
+            'role' => "user"
         ]);
     }
 }
